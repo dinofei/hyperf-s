@@ -2,6 +2,7 @@
 
 namespace App\Resource;
 
+use App\Common\FactoryTrait;
 use Hyperf\Resource\Json\JsonResource;
 
 /**
@@ -12,6 +13,10 @@ use Hyperf\Resource\Json\JsonResource;
  */
 class Info extends JsonResource
 {
+    use ToResultTrait, FactoryTrait;
+
+    public $wrap = null;
+
     /**
      * Transform the resource into an array.
      *

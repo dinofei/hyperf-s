@@ -60,7 +60,7 @@ class Paginator
     public static function factory()
     {
         return Context::getOrSet(static::class, function () {
-            return di()->get(static::class);
+            return di()->make(static::class);
         });
     }
 

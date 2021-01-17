@@ -2,6 +2,7 @@
 
 namespace App\Resource;
 
+use App\Common\FactoryTrait;
 use App\Utils\Paginator;
 use Hyperf\Resource\Json\ResourceCollection;
 
@@ -13,6 +14,10 @@ use Hyperf\Resource\Json\ResourceCollection;
  */
 class Page extends ResourceCollection
 {
+    use ToResultTrait, FactoryTrait;
+
+    public $wrap = null;
+
     /**
      * Transform the resource collection into an array.
      *
