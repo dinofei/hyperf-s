@@ -1,0 +1,19 @@
+<?php
+
+declare(strict_types=1);
+
+namespace %NAMESPACE%;
+
+use Hyperf\RpcServer\Annotation\RpcService;
+use Hyperf\HttpServer\Contract\RequestInterface;
+
+/**
+* @RpcService(name="%CLASS%", protocol="jsonrpc-http", server="jsonrpc-http")
+*/
+class %CLASS%
+{
+    public function handle(RequestInterface $request)
+    {
+        // write code.
+    }
+}

@@ -1,0 +1,12 @@
+<?php
+
+declare(strict_types=1);
+
+namespace %NAMESPACE%;
+
+use App\Common\FactoryTrait;
+
+class %CLASS%
+{
+    use FactoryTrait;
+}
